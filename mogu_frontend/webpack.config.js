@@ -25,6 +25,10 @@ const config = {
             {
                 test: /\.less$/,
                 use: ['style-loader', 'css-loader', 'less-loader']
+            },
+            {
+                test: /\.(woff|svg|eot|ttf)\??.*$/,
+                use: ['url-loader?limit=500&name=images/[name]-[hash:5].[ext]']
             }
         ]
     },
