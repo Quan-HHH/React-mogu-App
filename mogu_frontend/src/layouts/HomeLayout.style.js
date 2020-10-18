@@ -16,6 +16,8 @@ export const HomeTop = styled.div`
         height: 0.7733333rem;
         width: 1.813333rem;
         background-color: red;
+        padding: 0 10px;
+        margin-left: 10px;
     }
     .iconWrap {
         width: 1.813333rem;

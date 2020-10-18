@@ -31,6 +31,7 @@ xmp {
   text-decoration: none;
 }
 a:focus{text-decoration: none}
+a:active{text-decoration: none}
 body,
 input,
 textarea,
@@ -50,7 +51,7 @@ option {
 body {
   margin: 0 auto;
   padding-bottom: 44px;
-  padding-top:44px; /*iphone 的规则 给header让位 header用绝对定位 放在上面去*/
+  padding-top: 44px; /*iphone 的规则 给header让位 header用绝对定位 放在上面去*/
 }
 
 .hidden,
