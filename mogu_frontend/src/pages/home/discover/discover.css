@@ -1,3 +1,9 @@
 body {
   padding-top: 55px;
 }
+body .swiper-container {
+  height: 160px;
+}
+body .swiper-container .swiper-wrapper {
+  height: 100%;
+}

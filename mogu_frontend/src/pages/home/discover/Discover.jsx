@@ -1,14 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import './discover.css'
-import Swiper from "swiper/dist/js/swiper"
-import "swiper/dist/css/swiper.css"
-
+import Swiper from 'swiper'
+import 'swiper/css/swiper.min.css'
 
 function Discover() {
     const [slideList] = useState([
         {
             id: 1,
-            src: "https://s5.mogucdn.com/mlcdn/c45406/201015_2h25ghj9j946736l66d5f846ikc67_1060x367.jpg",
+            src: 'https://s5.mogucdn.com/mlcdn/c45406/201015_2h25ghj9j946736l66d5f846ikc67_1060x367.jpg',
             linkUrl: '#'
         },{
             id: 2,
@@ -27,7 +26,8 @@ function Discover() {
     useEffect(() => {
         new Swiper('.swiper-container', {
             
-            autoplay: 2000,
+            autoplay: true,
+            speed: 500,
             loop: true,
             pagination : {
                 el: '.swiper-pagination',
@@ -42,12 +42,12 @@ function Discover() {
             <div className="swiper-container">
                 <div className="swiper-wrapper">
                     {
-                        slideList.map((i, item) => {
-                            return <div className="swiper-slide" key={item.id}>
+                        slideList.map((item, i) => {
+                            return (<div className="swiper-slide" key={item.id}>
                                 <a href={item.linkUrl}>
-                                    <img src={item.src} alt="" width="100%" height="100%"/>
+                                    <img src={item.src} alt={item.src} width="100%" height="100%"/>
                                 </a>
-                            </div>
+                            </div>)
                         })
                     }
                     
@@ -55,7 +55,7 @@ function Discover() {
 
                 <div className="swiper-pagination"></div>
 
-                <div className="swiper-scrollbar"></div>
+                {/* <div className="swiper-scrollbar"></div> */}
             </div>
 
         </>
