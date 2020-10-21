@@ -1,0 +1,67 @@
+[
+    {
+        "id": 1,
+        "iconSrc": "https://s10.mogucdn.com/mlcdn/c45406/190821_8ak2b51abg5g1fk7lj9egjf0057ae_150x150.gif",
+        "desc": "新人福利"
+    },{
+        "id": 2,
+        "iconSrc": "https://s10.mogucdn.com/mlcdn/c45406/200914_43ga8b98c425i0hf2j9akc9ebfba0_135x135.jpg",
+        "desc": "母婴/童装"
+    },{
+        "id": 3,
+        "iconSrc": "https://s10.mogucdn.com/mlcdn/c45406/200924_234efhh19a7i07ddkia9c219i50lb_135x135.jpg",
+        "desc": "美妆"
+    },{
+        "id": 4,
+        "iconSrc": "https://s10.mogucdn.com/mlcdn/c45406/200327_3bk3bgjf99be932bh5ja98gecg40i_135x135.jpg",
+        "desc": "裙子"
+    },{
+        "id": 5,
+        "iconSrc": "https://s10.mogucdn.com/mlcdn/c45406/200327_1lejei1c2i9hg7c8c7aljjl0kijjb_135x135.jpg",
+        "desc": "配饰"
+    },{
+        "id": 6,
+        "iconSrc": "https://s10.mogucdn.com/mlcdn/c45406/200727_753ci9djhbck73fh9j9jj3c47bi41_135x135.gif",
+        "desc": "风格好店"
+    },{
+        "id": 7,
+        "iconSrc": "https://s10.mogucdn.com/mlcdn/c45406/190903_71ih092j1k9chh2bjdghh2jl054a4_150x150.jpg",
+        "desc": "女装"
+    },{
+        "id": 8,
+        "iconSrc": "https://s10.mogucdn.com/mlcdn/c45406/190903_0572el03440fllf207k3g5kfe6g35_150x150.jpg",
+        "desc": "上衣"
+    },{
+        "id": 9,
+        "iconSrc": "https://s10.mogucdn.com/mlcdn/c45406/200327_6207ag2geg1e3li2kkl8dcee789l7_135x135.jpg",
+        "desc": "女鞋"
+    },{
+        "id": 10,
+        "iconSrc": "https://s10.mogucdn.com/mlcdn/c45406/191021_0ld74670dl13h6ag605i4jg356h68_135x135.jpg",
+        "desc": "裤子"
+    },{
+        "id": 11,
+        "iconSrc": "https://s10.mogucdn.com/mlcdn/c45406/200327_5aa0g5d2ij656a38jla8kjja39hc1_135x135.jpg",
+        "desc": "内衣"
+    },{
+        "id": 12,
+        "iconSrc": "https://s10.mogucdn.com/mlcdn/c45406/200327_5ck3cb4a7kdf64d0f0j490hl683g7_135x135.jpg",
+        "desc": "童装"
+    },{
+        "id": 13,
+        "iconSrc": "https://s10.mogucdn.com/mlcdn/c45406/200831_114gef5f26lb39efcjdgg9k7467fd_135x135.png",
+        "desc": "包包"
+    },{
+        "id": 14,
+        "iconSrc": "https://s10.mogucdn.com/mlcdn/c45406/200327_566k8dkg645h25j5c95lc91dl1099_135x135.jpg",
+        "desc": "家居"
+    },{
+        "id": 15,
+        "iconSrc": "https://s10.mogucdn.com/mlcdn/c45406/200303_5bi8g79akh2b68bcbilgbc8il1bkl_520x520.png",
+        "desc": "男装男鞋"
+    },{
+        "id": 16,
+        "iconSrc": "https://s10.mogucdn.com/mlcdn/c45406/200327_89j4gef9kd87hd58d9511bee0f637_135x135.jpg",
+        "desc": "运动"
+    }
+]
