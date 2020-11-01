@@ -2,8 +2,11 @@ import React, { useEffect, useState } from 'react';
 import './discover.css'
 import Swiper from 'swiper'
 import 'swiper/css/swiper.min.css'
+import ResItem from '../../../components/resItem/ResItem'
+import { connect } from 'react-redux'
 
-function Discover() {
+function Discover(props) {
+    console.log(props)
     const [slideList] = useState([
         {
             id: 1,
@@ -54,12 +57,23 @@ function Discover() {
                 </div>
 
                 <div className="swiper-pagination"></div>
-
                 {/* <div className="swiper-scrollbar"></div> */}
+            </div>
+            <div className="res">
+                <div className="res__wrap">
+                    <ResItem />
+                </div>
             </div>
 
         </>
     )
 }
 
-export default Discover;
+const mapStateToProps = (state) => ({
+     
+})
+
+const mapDispatchToProps = (dispatch) => {
+    return
+}
+export default connect(mapStateToProps, mapDispatchToProps)(Discover);

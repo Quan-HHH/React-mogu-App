@@ -6,4 +6,6 @@ const app = express();
 // 使用代理
 // 跨域问题, => 已解决。 
 apiMocker(app, path.resolve('./mocker/mocker.js'))
-app.listen(8080);
+app.listen(8080, () => {
+    console.log('8080')
+});

@@ -3,18 +3,18 @@ import { HashRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import routes from './routes/index'
 import { renderRoutes } from 'react-router-config'
-
+import store from './store'
 import './assets/font/iconfont.css'
 
 
 function App() {
     return (
         <div className="App">
-            {/* <Provider> */}
+            <Provider store={store}>
             <HashRouter>
                 { renderRoutes(routes) }
             </HashRouter>
-            {/* </Provider> */}
+            </Provider>
         </div>
     )
 }
