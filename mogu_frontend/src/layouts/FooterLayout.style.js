@@ -9,6 +9,8 @@ export const Bottom = styled.div`
 `
 
 export const TabBar = styled.div`
+    background-color: #ffffff;
+    z-index: 99;
     height: 100%;
     display: flex;
     justify-content: space-around;

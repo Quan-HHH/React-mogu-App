@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux-immutable'
-import discoverReducer from '../pages/home/discover/store/reducer'
+import { reducer as discoverReducer } from '../pages/home/discover/store/index'
 
 export default combineReducers({
     discover: discoverReducer

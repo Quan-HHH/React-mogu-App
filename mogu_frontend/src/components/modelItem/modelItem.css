@@ -1,0 +1,42 @@
+.model-wrap {
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 0.133333rem 0;
+  display: inline-block;
+}
+.model-wrap .model__img img {
+  width: 100%;
+}
+.model-wrap .model__personal {
+  padding: 0.08rem 0.16rem;
+}
+.model-wrap .model__personal .model__personal-desc {
+  color: #666666;
+  font-size: 14px;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+}
+.model-wrap .model__personal .model__personal-info {
+  margin: 0.266667rem 0;
+}
+.model-wrap .model__personal .model__personal-info .model__personal-avatar {
+  width: 0.666667rem;
+  height: 0.666667rem;
+  border-radius: 100%;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: bottom;
+}
+.model-wrap .model__personal .model__personal-info .model__personal-avatar img {
+  width: 100%;
+}
+.model-wrap .model__personal .model__personal-info span {
+  vertical-align: bottom;
+  line-height: 0.666667rem;
+  font-weight: bolder;
+  margin-left: 0.2rem;
+}

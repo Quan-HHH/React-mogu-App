@@ -3,10 +3,15 @@ import './discover.css'
 import Swiper from 'swiper'
 import 'swiper/css/swiper.min.css'
 import ResItem from '../../../components/resItem/ResItem'
+import ModelItem from '../../../components/modelItem/ModelItem'
 import { connect } from 'react-redux'
+import { getDiscoverList_AC } from './store/actionCreators'
 
 function Discover(props) {
-    console.log(props)
+    // console.log('jhvgjhjh',props.data)
+    const { getDiscoverDataList } = props;
+    const { resItemDataList, modelDataList } = props;
+    // console.log(modelDataListt, 1212121212)
     const [slideList] = useState([
         {
             id: 1,
@@ -40,6 +45,10 @@ function Discover(props) {
             // }
         })
     }, [])
+
+    useEffect(() => {
+        getDiscoverDataList()
+    },[])
     return (
         <>
             <div className="swiper-container">
@@ -61,7 +70,21 @@ function Discover(props) {
             </div>
             <div className="res">
                 <div className="res__wrap">
-                    <ResItem />
+                    {
+                        resItemDataList.map((item, i) => (
+                                <ResItem imgSrc={item.image} title={item.title} key={item.id} />
+                            )
+                        )
+                    }
+                </div>
+            </div>
+            <div className="waterfall">
+                <div className="waterfall-list">
+                    {
+                        modelDataList.map((item, i) => (
+                            <ModelItem cover={item.cover} key={i} avatar={item.avatar} title={item.title} userInfo={item.userInfo} />
+                        ))
+                    }
                 </div>
             </div>
 
@@ -69,11 +92,18 @@ function Discover(props) {
     )
 }
 
-const mapStateToProps = (state) => ({
-     
-})
+const mapStateToProps = (state) => {
+    return {
+        resItemDataList: state.getIn(['discover','resItemList']).toJS(),
+        modelDataList: state.getIn(['discover', 'modelDataList']).toJS(),
+    }
+}
 
 const mapDispatchToProps = (dispatch) => {
-    return
+    return {
+        getDiscoverDataList: () => {
+            dispatch(getDiscoverList_AC())
+        },
+    }
 }
 export default connect(mapStateToProps, mapDispatchToProps)(Discover);

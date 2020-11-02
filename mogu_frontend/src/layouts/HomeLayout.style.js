@@ -2,6 +2,8 @@ import styled from 'styled-components'
 import style from '../assets/global-style'
 
 export const HomeTop = styled.div`
+    background-color: #ffffff;
+    z-index: 99;
     position: fixed;
     top: 0;
     height: 44px;
@@ -15,7 +17,7 @@ export const HomeTop = styled.div`
         border: none;
         height: 0.7733333rem;
         width: 1.813333rem;
-        background-color: red;
+        background-color: #eeeeee;
         padding: 0 10px;
         margin-left: 10px;
     }

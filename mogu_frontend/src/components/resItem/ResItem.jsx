@@ -1,14 +1,15 @@
 import React from 'react'
+import './resItem.css'
 
 function ResItem(props) {
-    console.log(props)
+    // console.log(props, '--------------')
     return (
         <div className="res__item">
             <div className="res__image">
-                <img src="" alt=""/>
+                <img src={props.imgSrc} alt=""/>
             </div>
             <div className="res__title">
-                新人福利
+                {props.title}
             </div>
         </div>
     )

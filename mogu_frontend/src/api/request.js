@@ -4,3 +4,7 @@ import { axiosInstance } from './config'
 export const getResItemRequest = (() => {
     return axiosInstance.get("/resItem");
 })
+
+export const getModelDataRequest = (() => {
+    return axiosInstance.get('/modelData');
+})
