@@ -5,8 +5,8 @@ import { NavLink } from 'react-router-dom'
 
 function Footer(props) {
     const {route} = props;
-    console.log(route);
-    console.log('-------', route.routes)
+    // console.log(route);
+    // console.log('-------', route.routes)
     return (
         <React.Fragment>
             <Bottom>

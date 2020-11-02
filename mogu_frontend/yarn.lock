@@ -4412,6 +4412,16 @@ react-is@^16.13.1, react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.1:
   resolved "https://registry.npm.taobao.org/react-is/download/react-is-16.13.1.tgz?cache=0&sync_timestamp=1602081737089&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Freact-is%2Fdownload%2Freact-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha1-eJcppNw23imZ3BVt1sHZwYzqVqQ=
 
+react-lazyload-image@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.npm.taobao.org/react-lazyload-image/download/react-lazyload-image-1.0.1.tgz#7e6e65235faa638d12d52f6243e9d72f50e56f85"
+  integrity sha1-fm5lI1+qY40S1S9iQ+nXL1Dlb4U=
+
+react-lazyload@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.npm.taobao.org/react-lazyload/download/react-lazyload-3.1.0.tgz#2d2b172ede29f0a72dc4b329af6f1626ffd637d2"
+  integrity sha1-LSsXLt4p8KctxLMpr28WJv/WN9I=
+
 react-redux@^7.2.2:
   version "7.2.2"
   resolved "https://registry.npm.taobao.org/react-redux/download/react-redux-7.2.2.tgz#03862e803a30b6b9ef8582dadcc810947f74b736"

@@ -1,8 +1,9 @@
 import React from 'react';
+import ShoppingHeader from '../../components/shoppingHeader/ShoppingHeader'
 
 function Shopping() {
     return (
-        <h2>Shopping</h2>
+        <ShoppingHeader />
     )
 }
 

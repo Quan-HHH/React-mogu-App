@@ -1,0 +1,33 @@
+.shopping-top {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 44px;
+  display: flex;
+  justify-content: space-between;
+}
+.shopping-top .icon-wrap {
+  padding: 5px;
+}
+.shopping-top .icon-wrap span {
+  color: #666666;
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.shopping-top .icon-wrap span.icon {
+  font-size: 18px;
+}
+.shopping-top input {
+  flex: 1;
+  border-radius: 100px;
+  border: none;
+  height: 0.8rem;
+  background-color: #eeeeee;
+  padding: 0 10px;
+  margin: 5px;
+}
+.shopping-top input::-webkit-input-placeholder {
+  color: #999999;
+}

@@ -1,0 +1,34 @@
+.shopping-top {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 44px;
+    display: flex;
+    justify-content: space-between;
+    .icon-wrap {
+        padding: 5px;
+        
+        span {
+            color: #666666;
+            display: block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &.icon {
+                font-size: 18px;
+            }
+        }
+    }
+    input {
+        flex: 1;
+        border-radius: 100px;
+        border: none;
+        height: 0.8rem;
+        background-color: #eeeeee;
+        padding: 0 10px;
+        margin: 5px;
+    }
+    input::-webkit-input-placeholder {
+        color: #999999;
+    }
+}
