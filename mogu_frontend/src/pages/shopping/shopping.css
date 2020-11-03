@@ -1,0 +1,34 @@
+.shopping {
+  background-color: #efefef;
+}
+.shopping .module_row_top {
+  background-color: #fff;
+  display: flex;
+  padding: 0.24rem 0.266667rem;
+  justify-content: space-between;
+}
+.shopping .module_row_mid {
+  background-color: #fff;
+  overflow-x: scroll;
+}
+.shopping .module_row_mid .module_row_mid_outer {
+  display: flex;
+  font-size: 0;
+  width: 150%;
+  flex-wrap: wrap;
+}
+.shopping .module_row_mid::-webkit-scrollbar {
+  display: none;
+}
+.shopping .pit-img {
+  padding-top: 5px;
+}
+.shopping .pit-img img {
+  width: 100%;
+}
+.shopping .mod-goods-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}

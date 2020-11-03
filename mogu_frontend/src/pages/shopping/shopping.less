@@ -1,0 +1,42 @@
+.shopping {
+    background-color: #efefef;
+    .module_row_top {
+        background-color: #fff;
+        display: flex;
+        padding: 0.24rem 0.266667rem;
+        justify-content: space-between;
+    }
+    .module_row_mid {
+        background-color: #fff;
+        overflow-x: scroll;
+        .module_row_mid_outer {
+            display: flex;
+            font-size: 0;
+            width: 150%;
+            flex-wrap: wrap;
+        }
+    }
+    .module_row_mid::-webkit-scrollbar{
+        // width: 10%;
+        // height: 6px;
+        // background-color: rgba(240, 240, 240, 1);
+        display: none;
+    }
+    // .module_row_mid::-webkit-scrollbar-track {
+    //     box-shadow: inset 0 0 0px rgba(240, 240, 240, .5);
+    //     border-radius: 10px;
+    //     background-color: rgba(240, 240, 240, .5);
+    //   }
+    .pit-img {
+        padding-top: 5px;
+        img {
+            width: 100%;
+        }
+    }
+    .mod-goods-list {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}

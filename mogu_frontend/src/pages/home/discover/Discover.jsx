@@ -72,7 +72,7 @@ function Discover(props) {
                 <div className="res__wrap">
                     {
                         resItemDataList.map((item, i) => (
-                                <ResItem imgSrc={item.image} title={item.title} key={item.id} />
+                                <ResItem imgSrc={item.image} title={item.title} key={item.id} width={20} />
                             )
                         )
                     }

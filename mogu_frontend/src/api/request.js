@@ -8,3 +8,7 @@ export const getResItemRequest = (() => {
 export const getModelDataRequest = (() => {
     return axiosInstance.get('/modelData');
 })
+
+export const getShoppingDataRequest = (() => {
+    return axiosInstance.get('./shoppingData');
+})

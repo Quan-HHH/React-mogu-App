@@ -1,0 +1,23 @@
+.mod-block-outer {
+  width: 2.213333rem;
+  height: 2.213333rem;
+}
+.mod-block-outer .img-block {
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+  overflow: hidden;
+  position: relative;
+}
+.mod-block-outer .img-block img {
+  width: 100%;
+}
+.mod-block-outer .img-block p {
+  color: white;
+  font-weight: 800;
+  font-size: 14px;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0.133333rem;
+}
