@@ -6,6 +6,20 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "4243179",
+      "name": "成就",
+      "font_class": "chengjiu",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "13101066",
+      "name": "钻石",
+      "font_class": "zuanshi",
+      "unicode": "e662",
+      "unicode_decimal": 58978
+    },
+    {
       "icon_id": "107713",
       "name": "return",
       "font_class": "return",

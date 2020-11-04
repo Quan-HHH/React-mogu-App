@@ -1,5 +1,5 @@
 import * as actionTypes from './constants'
-import { getResItemRequest, getModelDataRequest } from '../../../../api/request'
+import { getResItemRequest, getModelDataRequest } from '@/api/request'
 
 // export const 
 

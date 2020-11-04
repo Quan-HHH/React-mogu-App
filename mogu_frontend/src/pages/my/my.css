@@ -1,0 +1,60 @@
+html {
+  background-color: #f2f2f2;
+}
+html body {
+  padding-top: 25px;
+  padding-left: 0.16rem;
+  padding-right: 0.16rem;
+}
+html body .my .account-info {
+  display: flex;
+}
+html body .my .account-info .avatar-img {
+  width: 1.546667rem;
+  height: 1.546667rem;
+  border-radius: 100%;
+  border: #fff 2px solid;
+  overflow: hidden;
+}
+html body .my .account-info .avatar-img img {
+  height: 100%;
+}
+html body .my .account-info .account-name {
+  padding: 0 10px;
+  flex: 1;
+  line-height: 0.773333rem;
+}
+html body .my .account-info .account-name p {
+  font-size: 17px;
+}
+html body .my .account-info .account-name span {
+  border-radius: 0.266667rem;
+  font-size: 0.133333rem;
+  padding: 0.133333rem;
+  color: #fff;
+  background-color: #a3a4a3;
+  margin-top: 0.133333rem;
+  margin-right: 10px;
+}
+html body .my .account-info .member-center {
+  line-height: 1.546667rem;
+}
+html body .my .account-info .member-center span {
+  padding: 0.266667rem;
+  border-radius: 0.533333rem;
+  background-color: #dfb38f;
+  color: #533012;
+}
+html body .my .my-icon-tab1 {
+  margin: 18px 0;
+}
+html body .my .my-cart-wrap .my-cart-img {
+  background: url("../../../public/cart.png");
+  border-radius: 6px;
+  width: 4.56rem;
+  height: 3.2rem;
+}
+html body .my .my-cart-wrap .my-cart-img img {
+  width: 100%;
+  float: right;
+}

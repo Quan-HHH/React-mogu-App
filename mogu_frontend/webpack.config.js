@@ -10,7 +10,7 @@ const config = {
     },
     resolve: {
         extensions: ['.js', '.jsx'],
-        alias:{
+        alias: {
             '@': path.resolve(__dirname, './src'),
         }
     },
@@ -30,9 +30,16 @@ const config = {
                 use: ['style-loader', 'css-loader', 'less-loader']
             },
             {
-                test: /\.(woff|svg|eot|ttf)\??.*$/,
+                test: /\.(png|woff|svg|eot|ttf)\??.*$/,
                 use: ['url-loader?limit=500&name=images/[name]-[hash:5].[ext]']
-            }
+            },
+            {
+                test: /\.(png|jpe?g|gif|svg)(\?.*)?$/, //
+                loader: 'url-loader',
+                options: {
+                    limit: 10000,
+                }
+            },
         ]
     },
     devServer: {
