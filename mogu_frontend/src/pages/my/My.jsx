@@ -26,20 +26,59 @@ function My() {
 
             <div className="my-icon-tab1">
                 {
-                    iconItem.tab1.map((item, i) => (
+                    iconItem.tab1.map(item => (
                         <IconItem key={item.id} iconCode={item.iconCode} title={item.title} />
                     )
                     )
                 }
             </div>
             <div className="my-cart-wrap">
-                <div className="my-cart-img">
-                    <span>购物车</span>
-                    <span className="icon iconfont">0件商品&#xe610;</span>
-                    
+                <div className="my-cart-wrap-box">
+                    <div className="my-cart-img">
+                        <span>购物车</span>
+                        <span className="icon iconfont">0件商品&#xe610;</span>
+                    </div>
                 </div>
-                <div className="my-cart-info">
-
+                <div className="card-voucher-box">
+                    <li>
+                        <span>卡券红包</span>
+                        <span className="icon iconfont">6张活动券&#xe610;</span>
+                    </li>
+                    <li>
+                        <span>补贴保障</span>
+                        <span className="icon iconfont">退货补运费&#xe610;</span>
+                    </li>
+                    <li>
+                        <span>我的钱包</span>
+                        <span className="icon iconfont">查看白付美&#xe610;</span>
+                    </li>
+                </div>
+            </div>
+            <div className="my-order-wrap">
+                <div className="my-order-box-title">
+                    <span>我的订单</span>
+                    <span className="icon iconfont">全部&#xe610;</span>
+                </div>
+                <div className="my-icon-tab2">
+                    {
+                        iconItem.tab2.map(item => (
+                            <IconItem key={item.id} iconCode={item.iconCode} title={item.title} />
+                        )
+                        )
+                    }
+                </div>
+            </div>
+            <div className="my-order-wrap">
+                <div className="my-order-box-title">
+                    <span>我的工具</span>
+                </div>
+                <div className="my-icon-tab3">
+                    {
+                        iconItem.tab3.map(item => (
+                            <IconItem key={item.id} iconCode={item.iconCode} title={item.title} />
+                        )
+                        )
+                    }
                 </div>
             </div>
         </div>

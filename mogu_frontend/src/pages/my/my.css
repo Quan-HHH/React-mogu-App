@@ -3,8 +3,8 @@ html {
 }
 html body {
   padding-top: 25px;
-  padding-left: 0.16rem;
-  padding-right: 0.16rem;
+  padding-left: 0.266667rem;
+  padding-right: 0.266667rem;
 }
 html body .my .account-info {
   display: flex;
@@ -46,15 +46,68 @@ html body .my .account-info .member-center span {
   color: #533012;
 }
 html body .my .my-icon-tab1 {
-  margin: 18px 0;
+  margin: 0.213333rem 0;
 }
-html body .my .my-cart-wrap .my-cart-img {
-  background: url("../../../public/cart.png");
-  border-radius: 6px;
-  width: 4.56rem;
+html body .my .my-cart-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+html body .my .my-cart-wrap .my-cart-wrap-box {
+  width: 4.6rem;
   height: 3.2rem;
+  border-radius: 6px;
+  background-color: #fff;
 }
-html body .my .my-cart-wrap .my-cart-img img {
+html body .my .my-cart-wrap .my-cart-wrap-box .my-cart-img {
   width: 100%;
-  float: right;
+  background: url("../../../public/cart.jpg");
+}
+html body .my .my-cart-wrap .card-voucher-box {
+  box-sizing: border-box;
+  width: 4.6rem;
+  height: 3.2rem;
+  border-radius: 6px;
+  background-color: #fff;
+  padding: 0 0.346667rem;
+}
+html body .my .my-cart-wrap .card-voucher-box li {
+  list-style: none;
+  height: 1.066667rem;
+  line-height: 1.066667rem;
+  display: flex;
+  justify-content: space-between;
+}
+html body .my .my-cart-wrap .card-voucher-box li span:nth-child(1) {
+  font-size: 0.373333rem;
+  font-weight: bolder;
+}
+html body .my .my-cart-wrap .card-voucher-box li span:nth-child(2) {
+  font-size: 0.32rem;
+  color: #ababab;
+}
+html body .my .my-cart-wrap .card-voucher-box li + li {
+  border-top: 0.5px #c2c2c2 solid;
+}
+html body .my .my-order-wrap {
+  margin-top: 0.266667rem;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 6px;
+  background-color: #fff;
+  padding: 0 0.346667rem;
+}
+html body .my .my-order-wrap .my-order-box-title {
+  border-bottom: 0.5px #c2c2c2 solid;
+  height: 1.066667rem;
+  line-height: 1.066667rem;
+  display: flex;
+  justify-content: space-between;
+}
+html body .my .my-order-wrap .my-order-box-title span:nth-child(1) {
+  font-size: 0.373333rem;
+  font-weight: bolder;
+}
+html body .my .my-order-wrap .my-order-box-title span:nth-child(2) {
+  font-size: 0.32rem;
+  color: #ababab;
 }

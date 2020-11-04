@@ -1,6 +1,7 @@
 .icon-item-wrap {
   width: 20%;
   display: inline-block;
+  margin: 0.266667rem 0;
 }
 .icon-item-wrap span {
   display: block;
