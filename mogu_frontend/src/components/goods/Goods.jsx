@@ -1,9 +1,13 @@
 import React from 'react'
 import LazyLoad from 'react-lazyload'
 import './goods.css'
+import { connect } from 'react-redux';
+import { changeGoodsIsCollect_AC, changeGoodsUnCollect_AC } from '@/pages/shopping/store/actionCreators'
 
 function Goods(props) {
-    const { img, title, stars, price, oriPrice } = props;
+    const { id, img, title, stars, collect, price, oriPrice } = props;
+    const { handleGoodsIsCollect, handleGoodsUnCollect } = props;
+    console.log(collect)
     return (
         <div className="goods-item">
             <div className="good-item-img">
@@ -21,7 +25,15 @@ function Goods(props) {
                     <div className="price">￥{price}</div>
                     <div className="star">
                         {stars}
-                        <span className="icon iconfont"> &#xe647;</span>
+                        <span className="icon iconfont"
+                            dangerouslySetInnerHTML={{__html: collect ? "&#xe605;" :" &#xe647;"}}
+                            style={{color: collect ? "#ff5777" : ""}}
+                            onClick={() => {
+                                collect ?
+                                handleGoodsUnCollect(id):
+                                handleGoodsIsCollect(id)
+                            }}
+                        ></span>
                     </div>
                 </div>
                 <div className="buy-button">立即购买</div>
@@ -30,4 +42,25 @@ function Goods(props) {
     )
 }
 
-export default Goods;
+const mapStateToProps = state => {
+    return {
+
+    }
+}
+
+const mapDispatchToProps = dispatch => {
+    return {
+        // 收藏
+        handleGoodsIsCollect: (id) => {
+            dispatch(changeGoodsIsCollect_AC(id))
+        },
+        // 取消收藏
+        handleGoodsUnCollect: (id) => {
+            dispatch(changeGoodsUnCollect_AC(id))
+        }
+    }
+}
+
+export default 
+connect(mapStateToProps, mapDispatchToProps)
+(Goods);

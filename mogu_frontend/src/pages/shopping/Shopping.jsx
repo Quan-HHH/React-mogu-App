@@ -39,9 +39,9 @@ function Shopping(props) {
             </div>
             <div className="mod-goods-list">
                 {
-                    shoppingCommodityDataList.map((item, i) => {
+                    shoppingCommodityDataList.map(item => {
                         return (
-                            <Goods key={item.id} img={item.img} title={item.title} stars={item.stars} price={item.price} oriPrice={item.oriPrice} />
+                            <Goods key={item.id} id={item.id} img={item.img} title={item.title} stars={item.stars} price={item.price} oriPrice={item.oriPrice} collect={item.collect} />
                         )
                     })
                 }

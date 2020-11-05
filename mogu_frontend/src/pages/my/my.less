@@ -55,14 +55,30 @@ html {
                     height: 3.2rem;
                     border-radius: 6px;
                     background-color: #fff;
+                    overflow: hidden;
                     .my-cart-img {
-                        width: 100%;
-                        background: url("../../../public/cart.jpg");
-                        // overflow: hidden;
-
-                        // span {
-                        //     position: absolute;
-                        // }
+                        position: relative;
+                        img {
+                            width: 100%;
+                        }
+                        div {
+                            padding: 0.266667rem;
+                            position: absolute;
+                            top: 0;
+                            span {
+                                display: block;
+                                height: 0.533333rem;
+                                line-height: 0.533333rem;
+                            }
+                            span:nth-child(1) {
+                                font-size: 0.373333rem;
+                                font-weight: bolder;
+                            }
+                            span:nth-child(2) {
+                                font-size: 0.32rem;
+                                color: #ababab;
+                            }
+                        }
                     }
                 }
                 .card-voucher-box {

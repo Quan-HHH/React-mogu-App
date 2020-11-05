@@ -35,8 +35,11 @@ function My() {
             <div className="my-cart-wrap">
                 <div className="my-cart-wrap-box">
                     <div className="my-cart-img">
-                        <span>购物车</span>
-                        <span className="icon iconfont">0件商品&#xe610;</span>
+                        <img src="/cart.jpg" alt="" />
+                        <div>
+                            <span>购物车</span>
+                            <span className="icon iconfont">0件商品&#xe610;</span>
+                        </div>
                     </div>
                 </div>
                 <div className="card-voucher-box">
