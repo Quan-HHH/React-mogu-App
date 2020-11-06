@@ -11,9 +11,9 @@ function App() {
     return (
         <div className="App">
             <Provider store={store}>
-            <HashRouter>
-                { renderRoutes(routes) }
-            </HashRouter>
+                <HashRouter>
+                    { renderRoutes(routes) }
+                </HashRouter>
             </Provider>
         </div>
     )

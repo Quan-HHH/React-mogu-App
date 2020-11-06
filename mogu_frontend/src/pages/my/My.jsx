@@ -4,7 +4,7 @@ import { iconItem } from '@/api/config'
 import IconItem from '../../components/iconItem/IconItem';
 // import connect from 'react-redux'
 
-function My() {
+function My(props) {
     // console.log(cartPNG)
     return (
         <div className="my">
@@ -27,7 +27,7 @@ function My() {
             <div className="my-icon-tab1">
                 {
                     iconItem.tab1.map(item => (
-                        <IconItem key={item.id} iconCode={item.iconCode} title={item.title} />
+                        <IconItem key={item.id} iconCode={item.iconCode} title={item.title} href={item.href} route={props.route.routes} />
                     )
                     )
                 }

@@ -5,12 +5,12 @@ export const Bottom = styled.div`
     position: fixed;
     bottom: 0;
     height: 44px;
+    z-index: 99;
     border-top: 1px solid black;
 `
 
 export const TabBar = styled.div`
     background-color: #ffffff;
-    z-index: 99;
     height: 100%;
     display: flex;
     justify-content: space-around;

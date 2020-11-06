@@ -19,6 +19,8 @@ const NearbyComponent = lazy(() => import ('../pages/home/nearby/Nearby'))
 const AttenComponent = lazy(() => import ('../pages/attention/atten/Atten'))
 // const LookComponent = lazy(() => import ('../pages/attention/look/Look'))
 const HotComponent = lazy(() => import ('../pages/attention/look/hot/Hot'))
+const FavoritesComponent = lazy(() => import ('../pages/favorites/Favorites'))
+const GoodsDetailComponent = lazy(() => import ('../pages/goodsDetail/GoodsDetail'))
 
 const SuspenseComponent = Component => props => {
     // fallback 是一个回滚事件
@@ -101,7 +103,13 @@ export default [
                     }, 
                     {
                         path: '/shopping',
-                        component: SuspenseComponent(ShoppingComponent)
+                        component: SuspenseComponent(ShoppingComponent),
+                        routes: [
+                            {
+                                path: '/shopping/:id',
+                                component: SuspenseComponent(GoodsDetailComponent)
+                            }
+                        ]
                     }, 
                     {
                         path: '/message',
@@ -109,7 +117,11 @@ export default [
                     }, 
                     {
                         path: '/my',
-                        component: SuspenseComponent(MyComponent)
+                        component: SuspenseComponent(MyComponent),
+                    },
+                    {
+                        path: '/favorite',
+                        component: SuspenseComponent(FavoritesComponent)
                     }
                 ]
             }

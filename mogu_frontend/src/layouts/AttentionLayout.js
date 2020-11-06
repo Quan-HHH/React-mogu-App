@@ -5,6 +5,7 @@ import { AttentionTop, AttentionTabBar } from './AttentionLayout.style'
 
 function Attention(props) {
     const { route } = props;
+    // console.log(route.routes)
     return (
         <>
             <AttentionTop>

@@ -1,0 +1,55 @@
+.favorite-item-wrap {
+    margin: 10px 0;
+    display: flex;
+    background-color: #fff;
+    border-radius: 5px;
+    .favorite-item-img {
+        width: 3.733333rem;
+        height: 3.733333rem;
+        border-radius: 5px;
+        overflow: hidden;
+        img {
+            width: 100%;
+        }
+    }
+    .favorite-item-info {
+        padding: 0 0.346667rem;
+        flex: 1;
+        position: relative;
+        .favorite-item-desc {
+            font-size: 0.373333rem;
+            line-height: 0.586667rem;
+            width: 100%;
+            display: -webkit-box;
+            overflow: hidden;
+            -webkit-box-orient: vertical;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 2;
+        }
+        .favorite-item-collect-num {
+            font-size: 0.32rem;
+            color: #999999;
+            line-height: 0.666667rem;
+        }
+        .favorite-item-price {
+            font-weight: bolder;
+            color: #ff5777;
+            font-size: 0.4rem;
+        }
+        .find-more {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            span {
+                display: inline-block;
+                margin: 0.133333rem;
+                width: 1.466667rem;
+                height: 0.586667rem;
+                line-height: 0.586667rem;
+                text-align: center;
+                border: 1px solid #9c9c9c;
+                border-radius: 0.586667rem;
+            }
+        }
+    }
+}

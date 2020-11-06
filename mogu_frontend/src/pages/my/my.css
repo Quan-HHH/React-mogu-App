@@ -1,33 +1,33 @@
-html {
+.my {
   background-color: #f2f2f2;
-}
-html body {
+  margin-top: -44px;
   padding-top: 25px;
+  height: calc(100vh - 69px);
   padding-left: 0.266667rem;
   padding-right: 0.266667rem;
 }
-html body .my .account-info {
+.my .account-info {
   display: flex;
 }
-html body .my .account-info .avatar-img {
+.my .account-info .avatar-img {
   width: 1.546667rem;
   height: 1.546667rem;
   border-radius: 100%;
   border: #fff 2px solid;
   overflow: hidden;
 }
-html body .my .account-info .avatar-img img {
+.my .account-info .avatar-img img {
   height: 100%;
 }
-html body .my .account-info .account-name {
+.my .account-info .account-name {
   padding: 0 10px;
   flex: 1;
   line-height: 0.773333rem;
 }
-html body .my .account-info .account-name p {
+.my .account-info .account-name p {
   font-size: 17px;
 }
-html body .my .account-info .account-name span {
+.my .account-info .account-name span {
   border-radius: 0.266667rem;
   font-size: 0.133333rem;
   padding: 0.133333rem;
@@ -36,54 +36,54 @@ html body .my .account-info .account-name span {
   margin-top: 0.133333rem;
   margin-right: 10px;
 }
-html body .my .account-info .member-center {
+.my .account-info .member-center {
   line-height: 1.546667rem;
 }
-html body .my .account-info .member-center span {
+.my .account-info .member-center span {
   padding: 0.266667rem;
   border-radius: 0.533333rem;
   background-color: #dfb38f;
   color: #533012;
 }
-html body .my .my-icon-tab1 {
+.my .my-icon-tab1 {
   margin: 0.213333rem 0;
 }
-html body .my .my-cart-wrap {
+.my .my-cart-wrap {
   display: flex;
   justify-content: space-between;
 }
-html body .my .my-cart-wrap .my-cart-wrap-box {
+.my .my-cart-wrap .my-cart-wrap-box {
   width: 4.6rem;
   height: 3.2rem;
   border-radius: 6px;
   background-color: #fff;
   overflow: hidden;
 }
-html body .my .my-cart-wrap .my-cart-wrap-box .my-cart-img {
+.my .my-cart-wrap .my-cart-wrap-box .my-cart-img {
   position: relative;
 }
-html body .my .my-cart-wrap .my-cart-wrap-box .my-cart-img img {
+.my .my-cart-wrap .my-cart-wrap-box .my-cart-img img {
   width: 100%;
 }
-html body .my .my-cart-wrap .my-cart-wrap-box .my-cart-img div {
+.my .my-cart-wrap .my-cart-wrap-box .my-cart-img div {
   padding: 0.266667rem;
   position: absolute;
   top: 0;
 }
-html body .my .my-cart-wrap .my-cart-wrap-box .my-cart-img div span {
+.my .my-cart-wrap .my-cart-wrap-box .my-cart-img div span {
   display: block;
   height: 0.533333rem;
   line-height: 0.533333rem;
 }
-html body .my .my-cart-wrap .my-cart-wrap-box .my-cart-img div span:nth-child(1) {
+.my .my-cart-wrap .my-cart-wrap-box .my-cart-img div span:nth-child(1) {
   font-size: 0.373333rem;
   font-weight: bolder;
 }
-html body .my .my-cart-wrap .my-cart-wrap-box .my-cart-img div span:nth-child(2) {
+.my .my-cart-wrap .my-cart-wrap-box .my-cart-img div span:nth-child(2) {
   font-size: 0.32rem;
   color: #ababab;
 }
-html body .my .my-cart-wrap .card-voucher-box {
+.my .my-cart-wrap .card-voucher-box {
   box-sizing: border-box;
   width: 4.6rem;
   height: 3.2rem;
@@ -91,25 +91,25 @@ html body .my .my-cart-wrap .card-voucher-box {
   background-color: #fff;
   padding: 0 0.346667rem;
 }
-html body .my .my-cart-wrap .card-voucher-box li {
+.my .my-cart-wrap .card-voucher-box li {
   list-style: none;
   height: 1.066667rem;
   line-height: 1.066667rem;
   display: flex;
   justify-content: space-between;
 }
-html body .my .my-cart-wrap .card-voucher-box li span:nth-child(1) {
+.my .my-cart-wrap .card-voucher-box li span:nth-child(1) {
   font-size: 0.373333rem;
   font-weight: bolder;
 }
-html body .my .my-cart-wrap .card-voucher-box li span:nth-child(2) {
+.my .my-cart-wrap .card-voucher-box li span:nth-child(2) {
   font-size: 0.32rem;
   color: #ababab;
 }
-html body .my .my-cart-wrap .card-voucher-box li + li {
+.my .my-cart-wrap .card-voucher-box li + li {
   border-top: 0.5px #c2c2c2 solid;
 }
-html body .my .my-order-wrap {
+.my .my-order-wrap {
   margin-top: 0.266667rem;
   box-sizing: border-box;
   width: 100%;
@@ -117,18 +117,18 @@ html body .my .my-order-wrap {
   background-color: #fff;
   padding: 0 0.346667rem;
 }
-html body .my .my-order-wrap .my-order-box-title {
+.my .my-order-wrap .my-order-box-title {
   border-bottom: 0.5px #c2c2c2 solid;
   height: 1.066667rem;
   line-height: 1.066667rem;
   display: flex;
   justify-content: space-between;
 }
-html body .my .my-order-wrap .my-order-box-title span:nth-child(1) {
+.my .my-order-wrap .my-order-box-title span:nth-child(1) {
   font-size: 0.373333rem;
   font-weight: bolder;
 }
-html body .my .my-order-wrap .my-order-box-title span:nth-child(2) {
+.my .my-order-wrap .my-order-box-title span:nth-child(2) {
   font-size: 0.32rem;
   color: #ababab;
 }

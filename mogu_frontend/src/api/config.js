@@ -21,22 +21,27 @@ export const iconItem = {
             id: 1,
             iconCode: '&#xe635;',
             title: '个人主页',
+            // href: '/homepage'
         },{
             id: 2,
             iconCode: '&#xe626;',
             title: '我的直播',
+            // href: '/live'
         },{
             id: 3,
             iconCode: '&#xe647;',
             title: '收藏',
+            href: '/favorite'
         },{
             id: 4,
             iconCode: '&#xe611;',
             title: '关注',
+            // href: '/attention'
         },{
             id: 5,
             iconCode: '&#xe6a7;',
             title: '足迹',
+            // href: '/footmark'
         }
     ],
     tab2: [

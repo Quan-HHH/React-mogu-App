@@ -34,15 +34,15 @@ export const changeStarColor_AC = payload => ({
     payload
 })
 
-// export const addCollectItem_AC = payload => ({
-//     type: actionTypes.ADD_COLLECT_ITEM_LIST,
-//     payload
-// })
+export const addCollectItem_AC = payload => ({
+    type: actionTypes.ADD_COLLECT_ITEM_LIST,
+    payload
+})
 
-// export const removeCollectItem_AC = payload => ({
-//     type: actionTypes.REMOVE_COLLECT_ITEM_LIST,
-//     payload
-// })
+export const removeCollectItem_AC = payload => ({
+    type: actionTypes.REMOVE_COLLECT_ITEM_LIST,
+    payload
+})
 
 export const getShoppingDataList_AC = () => {
     return dispatch => {
@@ -63,13 +63,13 @@ export const getShoppingDataList_AC = () => {
 export const changeGoodsIsCollect_AC = (id) => {
     return dispatch => {
         dispatch(changeStarColor_AC(id));
-        // dispatch(addCollectItem_AC())
+        dispatch(addCollectItem_AC(id))
     }
 }
 
 export const changeGoodsUnCollect_AC = (id) => {
     return dispatch => {
         dispatch(changeStarColor_AC(id));
-        // dispatch(removeCollectItem_AC())
+        dispatch(removeCollectItem_AC(id))
     }
 }

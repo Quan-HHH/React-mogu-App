@@ -28,12 +28,23 @@ export default (state = defaultState, action) => {
             })
             return state.setIn(['shoppingCommodityDataList'], fromJS(shoppingCommodityDataNewList))
         
-        // case actionTypes.ADD_COLLECT_ITEM_LIST:
-
-        //     return state.setIn(['collectDataList'], )
+        case actionTypes.ADD_COLLECT_ITEM_LIST:
+            // state.toJS().collectDataList.push() 
+            const collectObj = state.toJS().shoppingCommodityDataList.filter((item) => {
+                return item.id === action.payload
+            })
+            let newCollectDataList = state.toJS().collectDataList;
+            newCollectDataList.push(...collectObj);
+            // console.log(...collectObj,'----------',state.getIn(['collectDataList']).push(...collectObj), state.getIn(['collectDataList']))
+            return state.setIn(['collectDataList'], fromJS(newCollectDataList))
         
-        // case actionTypes.REMOVE_COLLECT_ITEM_LIST:
-        //     return state.setIn()
+        case actionTypes.REMOVE_COLLECT_ITEM_LIST:
+            // console.log(collectDataList)
+            newCollectDataList = state.toJS().collectDataList.filter((item) => {
+                return item.id !== action.payload
+            })
+            console.log(newCollectDataList)
+            return state.setIn(['collectDataList'], fromJS(newCollectDataList))
 
         default:
             return state;
