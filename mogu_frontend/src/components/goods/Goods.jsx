@@ -26,13 +26,12 @@ function Goods(props) {
                     <div className="goods-item-info-price">
                         <div className="price">￥{price}</div>
                         <div className="star">
-                            <Prompt message={() => {}} />
                             {stars}
                             <span className="icon iconfont"
                                 dangerouslySetInnerHTML={{ __html: collect ? "&#xe605;" : " &#xe647;" }}
                                 style={{ color: collect ? "#ff5777" : "" }}
                                 onClick={(e) => {
-                                    e.stopPropagation();
+                                    e.preventDefault()
                                     collect ?
                                         handleGoodsUnCollect(id) :
                                         handleGoodsIsCollect(id)
