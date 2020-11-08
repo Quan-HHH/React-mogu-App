@@ -1,0 +1,43 @@
+.detail-footer-wrap {
+  z-index: 100;
+  bottom: 0;
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  background-color: #fff;
+  border-top: 0.5px solid #e6e6e6;
+  display: flex;
+  text-align: center;
+}
+.detail-footer-wrap .icon-item-wrap {
+  color: #000000;
+  width: 15.5%;
+  display: inline-block;
+  margin: 0.266667rem 0;
+}
+.detail-footer-wrap .icon-item-wrap span {
+  display: block;
+  text-align: center;
+}
+.detail-footer-wrap .icon-item-wrap .icon {
+  font-size: 0.533333rem;
+}
+.detail-footer-wrap .service {
+  color: #ff5777;
+}
+.detail-footer-wrap .add-to-cart {
+  line-height: 50px;
+  font-size: 0.4rem;
+  color: #ff5777;
+  background-color: #ffe6e8;
+  display: inline-block;
+  width: 26.75%;
+}
+.detail-footer-wrap .purchases-immediately {
+  line-height: 50px;
+  font-size: 0.4rem;
+  color: #ffffff;
+  background-color: #ff5777;
+  display: inline-block;
+  width: 26.75%;
+}

@@ -1,9 +1,9 @@
 .goods-detail-wrap {
-    background-color: #fff;
+    background-color: #eaeaea;
     z-index: 100;
     position: fixed;
-    top: 0;
-    bottom: 0;
+    top: 44px;
+    bottom: 50px;
     width: 100%;
     overflow-x: hidden;
     .goods-detail-img {
@@ -11,11 +11,13 @@
         height: 12rem;
         padding: 0 0.266667rem;
         overflow: hidden;
+        background-color: #fff;
         img {
             width: calc(100% - 0.533333rem);
         }
     }
     .goods-detail-price {
+        background-color: #fff;
         padding: 0.48rem 0.266667rem;
         span:nth-child(1) {
             font-size: 0.24rem;
@@ -36,6 +38,7 @@
         // }
     }
     .goods-detail-desc {
+        background-color: #fff;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -56,6 +59,31 @@
             border-radius: 0.4rem 0 0 0.4rem;
             background-color: #f0f0f0;
             color: #999999;
+        }
+    }
+    .goods-detail-send {
+        background-color: #fff;
+        padding: 5px 0.266667rem;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 0.5px #e6e6e6 solid;
+    }
+    .goods-detail-activity-img {
+        width: 100%;
+    }
+    .goods-detail-service {
+        background-color: #fff;
+        margin: 0.266667rem 0;
+        padding: 0.266667rem;
+        display: flex;
+        .goods-detail-service-item {
+            flex: 1;
+            span {
+                color: #666666;
+            }
+            .icon {
+                color: #fc686a;
+            }
         }
     }
 }

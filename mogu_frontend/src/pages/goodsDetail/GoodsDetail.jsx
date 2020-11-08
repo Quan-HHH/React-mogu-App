@@ -2,6 +2,7 @@ import React from 'react';
 import './goodDetail.css'
 import Header from '@/components/header/Header'
 import { connect } from 'react-redux'
+import Footer from '@/components/detailFooter/DetailFooter'
 
 
 function GoodsDetail(props) {
@@ -12,7 +13,6 @@ function GoodsDetail(props) {
     })
     console.log(goodsDetailData)
     const { img, collect, oriPrice, price, title } = goodsDetailData[0];
-    console.log(img)
     console.log(242432432423423)
     return (
         <div className="goods-detail-wrap">
@@ -34,7 +34,7 @@ function GoodsDetail(props) {
                 <span>免邮费</span>
                 <span>广东广州</span>
             </div>
-            <img src="https://s5.mogucdn.com/mlcdn/c45406/201023_09c1gf9801j1614l12c1fkb5a790j_750x76.png" alt=""/>
+            <img className="goods-detail-activity-img" src="https://s5.mogucdn.com/mlcdn/c45406/201023_09c1gf9801j1614l12c1fkb5a790j_750x76.png" alt=""/>
             <div className="goods-detail-service">
                 <div className="goods-detail-service-item">
                     <span className="icon iconfont">&#xed8d;</span>
@@ -49,6 +49,7 @@ function GoodsDetail(props) {
                     <span>延误必赔</span>
                 </div>
             </div>
+            <Footer collect={collect} />
         </div>
         
     )

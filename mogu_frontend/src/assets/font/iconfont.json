@@ -6,6 +6,20 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "539083",
+      "name": "店铺",
+      "font_class": "dianpu",
+      "unicode": "e689",
+      "unicode_decimal": 59017
+    },
+    {
+      "icon_id": "3730042",
+      "name": "xiao",
+      "font_class": "xiao",
+      "unicode": "e63f",
+      "unicode_decimal": 58943
+    },
+    {
       "icon_id": "4592851",
       "name": "人",
       "font_class": "ren",

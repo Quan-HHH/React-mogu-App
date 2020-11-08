@@ -1,23 +1,21 @@
 import React, { useEffect, memo, useRef } from 'react';
 import ShoppingHeader from '../../components/shoppingHeader/ShoppingHeader'
 import { connect } from 'react-redux'
-import { getShoppingDataList_AC } from './store/actionCreators'
-import ModBlock from '@/components/modBlock/ModBlock'
-import ResItem from '@/components/resItem/ResItem'
+import { getShoppingDataList_AC, getMoreCommodityData_AC } from './store/actionCreators'
 import Goods from '@/components/goods/Goods'
 import './shopping.css'
 import { renderRoutes } from 'react-router-config';
 import Scroll from '../../common/scroll/Scroll'
 import { forceCheck } from 'react-lazyload'
+import ShoppingClassify from '@/components/shoppingClassify/ShoppingClassify'
 
 
 function Shopping(props) {
-    const { getShoppingDataList, shoppingTopDataList, shoppingMidDataList, shoppingCommodityDataList } = props;
-    console.log(props.route)
-
-    const bsRef = useRef();
+    const { shoppingCommodityDataList } = props;
+    const { getShoppingDataList, getMoreCommodityData } = props;
+    // console.log(shoppingTopDataList, shoppingMidDataList, '99------------')
     useEffect(() => {
-        if (!shoppingTopDataList.length && !shoppingMidDataList.length && !shoppingCommodityDataList.length) {
+        if (!shoppingCommodityDataList.length) {
             getShoppingDataList();
         }
     }, [])
@@ -35,29 +33,21 @@ function Shopping(props) {
         <div className="shopping">
             <ShoppingHeader />
             <Scroll
+                pullUp={
+                    () => {
+                        console.log(123)
+                        getMoreCommodityData(shoppingCommodityDataList.length)
+                    }
+                }
+                pullDown={
+                    () => {getShoppingDataList();}
+                }
                 onScroll={forceCheck}
             >
                 <div>
-
-                    <div className="module_row_top">
-                        {
-                            shoppingTopDataList.map((item, i) => (
-                                <ModBlock key={i} title={item.title} img={item.img} />
-                            ))
-                        }
-                    </div>
-                    <div className="module_row_mid">
-                        <div className="module_row_mid_outer">
-                            {
-                                shoppingMidDataList.map((item, i) => (
-                                    <ResItem key={i} title={item.title} imgSrc={item.img} width={12.5} />
-                                ))
-                            }
-                        </div>
-                    </div>
-                    <div className="pit-img">
-                        <img src="https://s10.mogucdn.com/mlcdn/c45406/190426_4hlfgkc2ceaea67422ag73077lfce_1611x166.png" alt="" />
-                    </div>
+                    <ShoppingClassify />
+                    
+                    
                     <div className="mod-goods-list">
                         {
                             shoppingCommodityDataList.map(item => {
@@ -77,8 +67,8 @@ function Shopping(props) {
 
 const mapStateToProps = state => {
     return {
-        shoppingTopDataList: state.getIn(['shopping', 'shoppingTopDataList']).toJS(),
-        shoppingMidDataList: state.getIn(['shopping', 'shoppingMidDataList']).toJS(),
+        // shoppingTopDataList: state.getIn(['shopping', 'shoppingTopDataList']).toJS(),
+        // shoppingMidDataList: state.getIn(['shopping', 'shoppingMidDataList']).toJS(),
         shoppingCommodityDataList: state.getIn(['shopping', 'shoppingCommodityDataList']).toJS(),
     }
 }
@@ -87,7 +77,14 @@ const mapDispatchToProps = dispatch => {
     return {
         getShoppingDataList: () => {
             dispatch(getShoppingDataList_AC())
-        }
+        },
+        // 顶部上拉加载
+        getMoreCommodityData: (offset) => {
+            console.log('offset', offset)
+            dispatch(getMoreCommodityData_AC(offset))
+        },
+        // 顶部下拉刷新
+        // refreshCommodityData:
     }
 }
 

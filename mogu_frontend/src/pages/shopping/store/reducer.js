@@ -14,6 +14,10 @@ export default (state = defaultState, action) => {
             const { listName, data } = action.payload.toJS()
             return state.setIn([listName], fromJS(data))
         
+        case actionTypes.CHANGE_MORE_SHOPPING_DATA:
+            const moreCommodityDataList = [...(state.toJS().shoppingCommodityDataList), ...(action.payload).toJS()]
+            return state.setIn(['shoppingCommodityDataList'], fromJS(moreCommodityDataList))
+
         case actionTypes.CHANGE_STAR_COLOR:
             const shoppingCommodityDataNewList = state.toJS().shoppingCommodityDataList.map(item => {
                 if(action.payload === item.id) {
