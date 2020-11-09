@@ -46,8 +46,6 @@ function Shopping(props) {
             >
                 <div>
                     <ShoppingClassify />
-                    
-                    
                     <div className="mod-goods-list">
                         {
                             shoppingCommodityDataList.map(item => {
