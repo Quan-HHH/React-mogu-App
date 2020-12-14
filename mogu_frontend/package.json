@@ -13,6 +13,8 @@
     "url-loader": "^4.1.1"
   },
   "dependencies": {
+    "antd": "^4.9.3",
+    "antd-mobile": "^2.3.4",
     "axios": "^0.21.0",
     "better-scroll": "^2.0.5",
     "immutable": "^4.0.0-rc.12",

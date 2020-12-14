@@ -42,6 +42,7 @@ const config = {
             },
         ]
     },
+    devtool: 'source-map',
     devServer: {
         contentBase: './public',
         hot: true

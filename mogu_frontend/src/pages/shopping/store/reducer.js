@@ -5,7 +5,8 @@ const defaultState = fromJS({
     shoppingTopDataList: [],
     shoppingMidDataList: [],
     shoppingCommodityDataList: [],
-    collectDataList: []
+    collectDataList: [],
+    cartDataList: [],
 })
 
 export default (state = defaultState, action) => {
@@ -19,7 +20,6 @@ export default (state = defaultState, action) => {
             return state.setIn(['shoppingCommodityDataList'], fromJS(moreCommodityDataList))
 
         case actionTypes.CHANGE_STAR_COLOR:
-            console.log('变星星的reducer')
             const shoppingCommodityDataNewList = state.toJS().shoppingCommodityDataList.map(item => {
                 if(action.payload === item.id) {
                     item.collect = !item.collect;
@@ -44,12 +44,39 @@ export default (state = defaultState, action) => {
             return state.setIn(['collectDataList'], fromJS(newCollectDataList))
         
         case actionTypes.REMOVE_COLLECT_ITEM_LIST:
-            // console.log(collectDataList)
             newCollectDataList = state.toJS().collectDataList.filter((item) => {
                 return item.id !== action.payload
             })
             console.log(newCollectDataList)
             return state.setIn(['collectDataList'], fromJS(newCollectDataList))
+
+        case actionTypes.INCREASE_CART_ITEM_LIST:
+            let newCartDataList = state.toJS().cartDataList
+            // 购物车里没有 push进购物车
+            if( (newCartDataList.filter(item => item.id === action.payload)).length === 0 ) {
+                const cartObj = state.toJS().shoppingCommodityDataList.filter((item) => 
+                    item.id === action.payload
+                )
+                newCartDataList.push(...cartObj)
+            } 
+
+            // 购物车里有或没有 都让数量++
+            newCartDataList.forEach(item => {
+                if(item.id === action.payload) {
+                    item.cart ++
+                }
+            })
+            console.log(newCartDataList)
+            return state.setIn(['cartDataList'], fromJS(newCartDataList))
+
+        case actionTypes.DECREASE_CART_ITEM_LIST:
+            newCartDataList = state.toJS().cartDataList
+            newCartDataList = newCartDataList.map(item => {
+                if(item.id === action.payload && item.cart >= 1) {
+                    item.cart --
+                }
+            })
+            return state.setIn(['cartDataList'], fromJS(newCartDataList))
 
         default:
             return state;

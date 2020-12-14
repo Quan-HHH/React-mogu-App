@@ -1,12 +1,16 @@
 import React from 'react'
-import IconItem from '../iconItem/IconItem'
 import './detailFooter.css'
 import { connect } from 'react-redux'
-import { changeGoodsIsCollect_AC, changeGoodsUnCollect_AC } from '../../pages/shopping/store/actionCreators'
+import {
+    changeGoodsIsCollect_AC,
+    changeGoodsUnCollect_AC,
+    increaseCartItem_AC,
+} from '../../pages/shopping/store/actionCreators'
+import { Toast } from 'antd-mobile'
 
 function DetailFooter(props) {
     const { id, collect } = props
-    const { handleGoodsIsCollect, handleGoodsUnCollect } = props
+    const { handleGoodsIsCollect, handleGoodsUnCollect, handleGoodsToCart } = props
 
     return (
         <div className="detail-footer-wrap">
@@ -30,9 +34,15 @@ function DetailFooter(props) {
                     dangerouslySetInnerHTML={{ __html: collect ? '&#xe605;' : '&#xe647;' }}></span>
                 <span className="icon-item-title">收藏</span>
             </div>
-            <span className="add-to-cart">加入购物车</span>
+            <span
+                className="add-to-cart"
+                onClick={
+                    () => { handleGoodsToCart(id) }
+                }
+            >加入购物车</span>
             <span className="purchases-immediately">立即购买</span>
-        </div>
+        </div >
+
     )
 }
 
@@ -51,6 +61,11 @@ const mapDispatchToProps = dispatch => {
         // 取消收藏
         handleGoodsUnCollect: (id) => {
             dispatch(changeGoodsUnCollect_AC(id))
+        },
+        // 加入购物车
+        handleGoodsToCart: (id) => {
+            dispatch(increaseCartItem_AC(id))
+            alert('加入购物车成功')
         }
     }
 }

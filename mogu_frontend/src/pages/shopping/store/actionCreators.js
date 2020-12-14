@@ -4,8 +4,6 @@ import { getShoppingDataRequest } from '@/api/request'
 import { fromJS } from 'immutable'
 import { createBScroll } from 'better-scroll'
 
-
-
 export const changeShoppingTopList_AC = payload => ({
     type: actionTypes.CHANGE_SHOPPING_DATA,
     payload: fromJS({
@@ -50,6 +48,16 @@ export const removeCollectItem_AC = payload => ({
     payload
 })
 
+export const increaseCartItem_AC = payload => ({
+    type: actionTypes.INCREASE_CART_ITEM_LIST,
+    payload
+})
+
+export const decreaseCartItem_AC = payload => ({
+    type: actionTypes.DECREASE_CART_ITEM_LIST,
+    payload
+})
+
 export const getShoppingDataList_AC = () => {
     return dispatch => {
         getShoppingDataRequest(0).then(res => {
@@ -81,7 +89,6 @@ export const getMoreCommodityData_AC = (offset) => {
 }
 
 export const changeGoodsIsCollect_AC = (id) => {
-    console.log('dispatch触发了')
     return dispatch => {
         dispatch(changeStarColor_AC(id))
         dispatch(addCollectItem_AC(id))
