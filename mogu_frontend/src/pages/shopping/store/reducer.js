@@ -19,6 +19,7 @@ export default (state = defaultState, action) => {
             return state.setIn(['shoppingCommodityDataList'], fromJS(moreCommodityDataList))
 
         case actionTypes.CHANGE_STAR_COLOR:
+            console.log('变星星的reducer')
             const shoppingCommodityDataNewList = state.toJS().shoppingCommodityDataList.map(item => {
                 if(action.payload === item.id) {
                     item.collect = !item.collect;

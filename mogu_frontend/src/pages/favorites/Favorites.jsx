@@ -8,7 +8,6 @@ function Favorites(props) {
     // console.log(FavoriteItem)
     // console.log(props)
     const { favoriteGoodsList } = props;
-    console.log(favoriteGoodsList.length);
     return (
         <div className="favorite">
             <Header title="收藏夹" iconLeft="&#xe60b;" iconRight="" />

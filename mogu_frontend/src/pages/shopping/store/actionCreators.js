@@ -81,8 +81,9 @@ export const getMoreCommodityData_AC = (offset) => {
 }
 
 export const changeGoodsIsCollect_AC = (id) => {
+    console.log('dispatch触发了')
     return dispatch => {
-        dispatch(changeStarColor_AC(id));
+        dispatch(changeStarColor_AC(id))
         dispatch(addCollectItem_AC(id))
     }
 }

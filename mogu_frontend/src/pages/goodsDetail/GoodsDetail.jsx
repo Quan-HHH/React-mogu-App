@@ -13,7 +13,6 @@ function GoodsDetail(props) {
     })
     console.log(goodsDetailData)
     const { img, collect, oriPrice, price, title } = goodsDetailData[0];
-    console.log(242432432423423)
     return (
         <div className="goods-detail-wrap">
             <Header iconLeft="&#xe60b;" title="" iconRight="&#xe7b9;" />
@@ -49,7 +48,7 @@ function GoodsDetail(props) {
                     <span>延误必赔</span>
                 </div>
             </div>
-            <Footer collect={collect} />
+            <Footer collect={collect} id={id} />
         </div>
         
     )

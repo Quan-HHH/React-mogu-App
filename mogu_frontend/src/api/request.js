@@ -10,6 +10,5 @@ export const getModelDataRequest = (() => {
 })
 
 export const getShoppingDataRequest = ((offset) => {
-    console.log(offset)
     return axiosInstance.get(`./shoppingData?offset=${offset}`);
 })

@@ -1,9 +1,7 @@
 import React from 'react';
 import './header.css'
-import { NavLink } from 'react-router-dom'
 
 function Header(props) {
-    console.log('asd',window.history)
     const { title, iconLeft, iconRight} = props;
     return (
         <div className="header-wrap">
